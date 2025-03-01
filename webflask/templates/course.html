@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ course_name }}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      table,
+      td {
+        margin: 10px;
+        padding: 10px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+      h1 {
+        padding: 10px;
+        background-color: palevioletred;
+        color: white;
+      }
+    </style>
+    <script>
+      let sessionTimer = Date.now(); // Starting the timer
+      let currentDate = new Date(); // Get the current date and time
+      let hasLogged = false; // prevents the mutiple logs of the same session
+
+      // Logs the session duration and sends it to the backend
+      function logTime() {
+        if (hasLogged) return;
+
+        // Calculate the time spent in the course
+        let sessionEndTimer = Date.now();
+        let duration = (sessionEndTimer - sessionTimer) / 1000; // Convert to seconds
+
+        // Get current date and time
+        let date = currentDate.toISOString().split("T")[0]; // Extracts YYYY-MM-DD
+        let time = currentDate.toTimeString().split(" ")[0]; // Extracts HH:MM:SS
+
+        // Send the time to Flask
+        fetch("/log_time", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            duration: duration,
+            courseName: "{{ course_name }}",
+            date: date,
+            time: time,
+          }),
+        });
+
+        hasLogged = true;
+
+        console.log("Session logged:", duration, "seconds");
+      }
+
+      // Detect when the user hides the page (switches tab/minimizes)
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+          logTime(); // Log the time when the user stops looking
+        } else {
+          sessionTimer = Date.now(); // Start a new session when they return
+          hasLogged = false;
+        }
+      });
+
+      // Also log time when the user completely leaves the page
+      window.addEventListener("beforeunload", logTime);
+    </script>
+  </head>
+  <body class="bg-light">
+    <h1 class="text-center mb-4">{{ course_name }}</h1>
+    <div class="container mb-4 border border-5">
+      {{ content | safe }}
+      <br />
+      <!-- Link to the quiz related to the course -->
+      <a href="/quiz/{{ course_name }}">
+        <button class="btn btn-primary">Take Quiz</button>
+      </a>
+      <br /><br />
+    </div>
+  </body>
+</html>
