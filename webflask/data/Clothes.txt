@@ -23,6 +23,8 @@ Have a look at the Spanish vocabulary for clothes and see how many you can remem
 | una gorra    | a cap        |
 | una bufanda  | a scarf      |
 
+![Image](/static/9a.png)
+
 Remember that in Spanish the *ll* sound is pronounced as a ‘y’.
 
 - *Llevo una camisa* – I wear a shirt
@@ -69,6 +71,8 @@ For plural nouns, there are two ways to say 'some' in Spanish.
 
 You use **unos** for masculine nouns, for example:
 
+![Image](/static/9b.png)
+
 | Spanish         | English      |
 |-----------------|--------------|
 | unos pantalones | some trousers|
@@ -81,6 +85,8 @@ And **unas** for feminine nouns, for example:
 | unas botas            | some boots     |
 | unas gafas de sol     | some sunglasses|
 | unas bragas           | some knickers  |
+
+![Image](/static/9c.png)
 
 ### Did you know?
 

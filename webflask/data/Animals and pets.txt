@@ -38,6 +38,8 @@ Try using **tengo** to create a sentence with the animals below:
 | **un conejo**  | a rabbit |
 | **un caballo** | a horse  |
 
+![Image](/static/3a.jpg)
+
 ## Using colours
 
 You can also use colours to describe your pets, for example:
@@ -47,6 +49,8 @@ You can also use colours to describe your pets, for example:
 - **Tengo un ratón blanco** - I have a white mouse
 
 ( To learn or remind yourself of colours in Spanish, check out our colours guide )
+
+![Image](/static/3b.png)
 
 ## Giving names
 
@@ -94,6 +98,8 @@ Take a look at the adjectives below and try to extend your sentence:
 | **pequeño**     | small       |
 | **inteligente** | intelligent |
 | **simpático**   | friendly    |
+
+![Image](/static/3c.png)
 
 ## The 'e' sound
 

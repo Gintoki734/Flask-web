@@ -22,6 +22,8 @@ The literal translation of **hace** is "it makes." For example, **hace calor** m
 | hace sol    | it is sunny   |
 | hace frío   | it is cold    |
 
+![Image](/static/5a.jpg)
+
 To ask what the weather is like, the question is:
 
 **¿Qué tiempo hace?** - What is the weather like?
@@ -43,6 +45,8 @@ Like in English, in Spanish, some verbs can be used on their own to form weather
 - Another example is the verb **nevar** (to snow).
 
   To say 'it snows,' the verb changes to **nieva**.
+
+![Image](/static/5b.jpg)
 
 ## Talking About Seasons
 
@@ -66,3 +70,4 @@ You can use the weather and season phrases together to create sentences. For exa
 - **En otoño hace fresco** - In autumn it's cool
 - **En invierno hace frío** - In winter it's cold
 
+![Image](/static/5c.jpg)

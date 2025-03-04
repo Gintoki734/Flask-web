@@ -101,9 +101,9 @@
           <br/>
           <p>Your score is ${score} out of ${quizData.questions.length}</p>
           <br/>
-          <a href="../" class="btn btn-info text-white"> Home </a>
+          <a href="{{ url_for('index') }}" class="btn btn-info text-white"> Home </a>
           <br/>
-          <a href="/course/{{ course_name }}" class="btn btn-info text-white"> test </a>
+          <a href="/course/{{ course_name }}" class="btn btn-info text-white"> Back to the course </a>
 
         `;
 

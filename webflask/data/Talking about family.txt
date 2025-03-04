@@ -41,6 +41,8 @@ Examples:
 - **¿Cómo se llama tu padre?** - What’s your dad called?
 - **¿Cómo se llaman tus hermanos?** - What are your brothers called?
 
+![Image](/static/2a.png)
+
 ## Giving names
 
 To talk about one person’s name (singular), use **Se llama…** – He / She is called
@@ -70,6 +72,8 @@ Examples:
 - **Mi padre se llama Jakob** - My dad is called Jakob
 - **Mi hermana se llama Alisha** - My sister is called Alisha
 - **Mis padres se llaman Farha y Donald** - My parents are called Farha and Donald
+
+![Image](/static/2b.png)
 
 ## The 'í' sound
 

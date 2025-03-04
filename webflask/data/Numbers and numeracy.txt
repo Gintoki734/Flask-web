@@ -93,6 +93,8 @@ In Spanish you use the verb 'to have' (tener) to say how old you are.
 
 (This literally means 'I have… years')
 
+![Image](/static/1b.png)
+
 - Tengo siete años - I am seven years old
 - Tengo ocho años - I am eight years old
 - Tengo nueve años - I am nine years old
@@ -110,6 +112,8 @@ Once you’ve learned how to count in Spanish, you can extend your knowledge and
 | multiplicado por     | multiplied by    |
 | dividido por         | divided by       |
 | es igual a           | equals           |
+
+![Image](/static/6b.png)
 
 - cuatro más cuatro es igual a ocho - 4 + 4 = 8 (four plus four equals eight)
 - doce menos cuatro es igual a ocho - 12 - 4 = 8 (twelve minus four equals eight)
@@ -152,3 +156,5 @@ Examples:
 
 - El dos de diciembre = The 2nd of December
 - El doce de agosto = The 12th of August
+
+![Image](/static/6c.png)

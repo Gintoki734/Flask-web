@@ -45,6 +45,11 @@ def load_quiz(filename):
 # Dispalys the first page
 @app.route("/")
 def home():
+    return render_template("landingpage.html")
+
+# Dispalys the first page
+@app.route("/index")
+def index():
     return render_template("index.html", courses=COURSES)
 
 # Displays course content

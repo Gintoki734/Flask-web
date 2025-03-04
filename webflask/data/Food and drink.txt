@@ -40,6 +40,8 @@ For plurals, instead of **la** use **las** and instead of **el** use **los**, fo
 - las verduras - vegetables
 - los bocadillos - sandwiches
 
+![Image](/static/10a.png)
+
 When saying what you like in plural, use **me gustan**, for example:
 
 - Me gustan las patatas fritas - I like chips
@@ -81,6 +83,8 @@ Try ordering some of the food and drinks below:
 | el helado             | ice cream        |
 | el agua               | water            |
 | el zumo de naranja    | orange juice     |
+
+![Image](/static/10b.png)
 
 Here are some examples of how to order in Spanish:
 

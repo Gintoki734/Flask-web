@@ -2,6 +2,8 @@ Learn how to introduce yourself in Spanish with these useful phrases.
 
 ### 'What's Your Name?'
 
+![Image](/static/1a.png)
+
 To ask someone's name, use the question:
 
 **¿Cómo te llamas?**
@@ -40,9 +42,8 @@ In Spanish, you use the verb **tener** (to have) to say how old you are.
 
 *(This literally means "I have… years")*
 
-*Little girl with a ponytail*
+![Image](/static/1b.png)
 
-#### Examples:
 - *Tengo siete años* – I am seven years old  
 - *Tengo ocho años* – I am eight years old  
 - *Tengo nueve años* – I am nine years old  
@@ -76,7 +77,7 @@ Try using the phrases below or add your own town at the end.
 | Vivo en Glasgow      | I live in Glasgow    |
 | Vivo en Dumfries     | I live in Dumfries   |
 
-*A map of Scotland*
+![Image](/static/1c.png)
 
 ### Talking About Countries
 

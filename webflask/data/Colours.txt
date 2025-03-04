@@ -30,6 +30,8 @@ Examples:
 - Mi color preferido es el rojo - My favourite colour is red
 - Mi color preferido es el negro - My favourite colour is black
 
+![Image](/static/8a.png)
+
 #### Asking what someone's favourite colour is
 
 To ask 'What is your favourite colour?' you can say:
@@ -74,6 +76,8 @@ The colour ends in a.
 
 ### Plural nouns
 
+![Image](/static/8b.png)
+
 As well as an o or a, the colour has an s at the end:
 
 **Masculine (plural)**  
@@ -97,3 +101,5 @@ Examples:
   - un vestido naranja - an orange dress
   - una falda naranja - an orange skirt
   - unos zapatos naranja - orange shoes
+
+![Image](/static/8c.png)

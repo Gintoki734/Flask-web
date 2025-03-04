@@ -24,6 +24,10 @@
         background-color: palevioletred;
         color: white;
       }
+      img {
+        width: 50%;
+        height: 50%;
+      }
     </style>
     <script>
       let sessionTimer = Date.now(); // Starting the timer
@@ -76,7 +80,22 @@
     </script>
   </head>
   <body class="bg-light">
-    <h1 class="text-center mb-4">{{ course_name }}</h1>
+    <h1 class="text-center mb-4">
+      <a
+        href="{{ url_for('index') }}"
+        style="text-decoration: none; color: inherit"
+        >{{ course_name }}</a
+      >
+    </h1>
+    <a
+      href="{{ url_for('index') }}"
+      class="btn btn-outline-primary btn-sm"
+      style="width: 20%"
+    >
+      Home</a
+    >
+    <br /><br />
+
     <div class="container mb-4 border border-5">
       {{ content | safe }}
       <br />

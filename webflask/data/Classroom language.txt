@@ -13,6 +13,8 @@ Here are some useful instructions that you might hear your teacher use in class:
 
 *(These are all written in the plural form of the verb which you use when talking to more than one person.)*
 
+![Image](/static/4a.png)
+
 ## Classroom Objects
 Here are some things you might use in class:
 
@@ -36,6 +38,8 @@ You can then add the noun (the thing) you want to know about.
 - ¿Tienes un lápiz? - Do you have a pencil?
 
 *("Tienes" comes from the verb "tener," which means 'to have.')*
+
+![Image](/static/4b.png)
 
 ### 'I have...'
 To talk about what you have or don't have, you can say:
@@ -75,6 +79,8 @@ Hoy tengo las matemáticas, el inglés y la historia - Today I have maths, Engli
 To ask someone what their favourite subject is, you can say:
 
 **¿Cuál es tu asignatura favorita?** - What is your favourite subject?
+
+![Image](/static/4c.png)
 
 To say what your favourite subject is, you can use:
 

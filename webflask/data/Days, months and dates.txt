@@ -24,6 +24,8 @@ Examples:
 - *Hoy es el jueves* – Today it is Thursday
 - *Hoy es el viernes* – Today it is Friday
 
+![Image](/static/4b.png)
+
 ### Asking what day it is
 To ask 'What day is it today?' you can say:
 
@@ -49,6 +51,9 @@ To ask 'What day is it today?' you can say:
 *(Tip: The months in Spanish follow the same rule as the days and start with a small letter instead of a capital.)*
 
 ### Saying what month it is
+
+![Image](/static/7b.png)
+
 To say 'It is…' you can use the phrase:
 
 **Es …**
@@ -82,6 +87,8 @@ To ask 'What is the date today?' you can say:
 
 (*la fecha* means 'the date' in Spanish.)
 
+![Image](/static/7c.png)
+
 ### Did you know?
 
 To say 'the 1st', use **el primero**. This is the only **ordinal number** you use in dates.
@@ -107,6 +114,8 @@ Examples:
 
 - *Mi cumpleaños es el dos de mayo* – My birthday is the second of May
 - *Mi cumpleaños es el doce de diciembre* – My birthday is the 12th of December
+
+![Image](/static/2b.png)
 
 ### Asking someone's birthday
 To ask someone 'When is your birthday?' you can say:
