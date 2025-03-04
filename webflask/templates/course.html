@@ -100,7 +100,7 @@
       {{ content | safe }}
       <br />
       <!-- Link to the quiz related to the course -->
-      <a href="/quiz/{{ course_name }}">
+      <a href="{{ url_for('quiz', course_name=course_name) }}">
         <button class="btn btn-primary">Take Quiz</button>
       </a>
       <br /><br />

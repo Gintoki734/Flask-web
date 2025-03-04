@@ -42,6 +42,21 @@
         background-color: palevioletred;
         color: white;
       }
+
+      .feedback {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .next-button {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .disabled-radio {
+        pointer-events: none;
+        opacity: 0.6;
+      }
     </style>
     <script>
       let qIndex = 0; // Tracks the current question
@@ -71,21 +86,47 @@
           return;
         }
 
-        endquizTimer = Date.now()
+        endquizTimer = Date.now();
         timetaken[qIndex] = (endquizTimer - quizTimer) / 1000; //Convert to seconds
+
+        // Disable radio buttons to stop tracking clicks
+        const radioButtons = document.querySelectorAll('input[name="option"]');
+        radioButtons.forEach((radio) => {
+          radio.classList.add("disabled-radio");
+          radio.disabled = true;
+        });
+
+        // assign the DOM element
+        const feedbackElement = document.getElementById("feedback");
+        const nextButton = document.getElementById("nextButton");
 
         // Check user answer to the correct answer and give feedback depending on the result
         if (selectedOption.value === quizData.questions[qIndex].answer) {
           score++;
-          alert("Correct!");
+          feedbackElement.innerHTML = 'Correct';
         } else {
-          alert(`Wrong! The correct answer is: ${quizData.questions[qIndex].answer}`);
+          feedbackElement.innerHTML = `Wrong! The correct answer is: ${quizData.questions[qIndex].answer}`;
         }
 
-        // Next question
+        // Disable the Submit button and show the Next button
+        document.getElementById("submitBtn").disabled = true;
+        nextButton.style.display = "block";
+      }
+
+      // Function to move on to the next question
+      function nextQuestion() {
+        //Next Question
         qIndex++;
 
-        // Display the next question if present otherwise display results
+        // Clear feedback
+        document.getElementById("feedback").innerHTML = "";
+        // Hide the Next button
+        document.getElementById("nextButton").style.display = "none";
+
+        // Enable the Submit button for the next question
+        document.getElementById("submitBtn").disabled = false;
+
+        // Display the next question if avaliable otherwise display quiz results
         if (qIndex < quizData.questions.length) {
           displayQuestion();
         } else {
@@ -101,10 +142,12 @@
           <br/>
           <p>Your score is ${score} out of ${quizData.questions.length}</p>
           <br/>
+          <a href="{{ url_for('quiz', course_name=course_name) }}" class="btn btn-info text-white"> Try Again </a>
+          <br/>
           <a href="{{ url_for('index') }}" class="btn btn-info text-white"> Home </a>
           <br/>
-          <a href="{{ url_for('course', course_name=course_name) }}" class="btn btn-info text-white"> Back to the course </a>
-
+          <a href="{{ url_for('course', course_name=course_name) }}" class="btn btn-info text-white"> Back to the Course </a>
+          <br/>
         `;
 
         // Displaying it in the quiz container
@@ -128,7 +171,6 @@
             quiztimetaken: timetaken
           }),
         });
-
       }
 
       // Function to display question and options
@@ -148,10 +190,9 @@
             <input type="radio" name="option" value="${option}" onclick="trackClick()">
             ${option}
           </label>
-        `).join(''); // join combines the array of html strings into a single string
+        `).join(''); // "join()" combines the array of html strings into a single string
 
         quizTimer = Date.now();
-
       }
 
       window.onload = displayQuestion;
@@ -161,14 +202,23 @@
     <div class="container py-5">
       <!-- Displaying course name -->
       <h1 class="text-center mb-4">{{ course_name }} Quiz</h1>
+
       <div id="quiz-container" class="card shadow p-4">
+        <!-- Where question will be displayed -->
         <div id="question" class="card shadow p-4"></div>
-        <!-- Container for the question -->
+
         <br /><br />
+
+        <!-- Where options will be displayed-->
         <div id="options" class="d-flex flex-column"></div>
-        <!-- Container for the options -->
+
+        <br /><br />
+
+        <!-- Where feedback will be displayed-->
+        <div id="feedback" class="feedback"></div>
         <br /><br />
         <div class="d-flex justify-content-center">
+          <!-- Button to check the answer based on the selected user option-->
           <button
             id="submitBtn"
             onclick="checkAnswer()"
@@ -176,7 +226,14 @@
           >
             Submit
           </button>
-          <!-- Submit button to check the answer -->
+          <!-- Moves on to the next question -->
+          <button
+            id="nextButton"
+            onclick="nextQuestion()"
+            class="btn btn-purple text-white next-button"
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>
