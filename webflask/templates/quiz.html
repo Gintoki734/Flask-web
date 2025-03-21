@@ -103,9 +103,9 @@
         // Check user answer to the correct answer and give feedback depending on the result
         if (selectedOption.value === quizData.questions[qIndex].answer) {
           score++;
-          feedbackElement.innerHTML = 'Correct';
+          feedbackElement.innerHTML = '✅ Correct';
         } else {
-          feedbackElement.innerHTML = `Wrong! The correct answer is: ${quizData.questions[qIndex].answer}`;
+          feedbackElement.innerHTML = `❌ Wrong! The correct answer is: ${quizData.questions[qIndex].answer}`;
         }
 
         // Disable the Submit button and show the Next button
@@ -236,6 +236,25 @@
           </button>
         </div>
       </div>
+      <br /><br />
+      <footer>
+        <p>
+          This website uses content taken from
+          <a href="https://www.bbc.co.uk/bitesize/subjects/z4crr2p"
+            >BBC Bitesize</a
+          >. BBC is not affiliated with or endorsing this site.
+        </p>
+        <p class="quiz-attribution">
+          This quiz is adapted from BBC Bitesize. Original content © BBC.
+        </p>
+
+        <p>
+          Image source:
+          <a href="https://www.bbc.co.uk/bitesize/subjects/z4crr2p"
+            >BBC Bitesize</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

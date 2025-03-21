@@ -32,11 +32,11 @@
     <script>
       let sessionTimer = Date.now(); // Starting the timer
       let currentDate = new Date(); // Get the current date and time
-      let hasLogged = false; // prevents the mutiple logs of the same session
+      let logs = false; // prevents the mutiple logs of the same session
 
       // Logs the session duration and sends it to the backend
       function logTime() {
-        if (hasLogged) return;
+        if (logs) return;
 
         // Calculate the time spent in the course
         let sessionEndTimer = Date.now();
@@ -60,18 +60,18 @@
           }),
         });
 
-        hasLogged = true;
+        logs = true;
 
         console.log("Session logged:", duration, "seconds");
       }
 
-      // Detect when the user hides the page (switches tab/minimizes)
+      // Detect when the user hides the page (switches tab/minimizes) - https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event
       document.addEventListener("visibilitychange", function () {
         if (document.visibilityState === "hidden") {
           logTime(); // Log the time when the user stops looking
         } else {
           sessionTimer = Date.now(); // Start a new session when they return
-          hasLogged = false;
+          logs = false;
         }
       });
 
@@ -105,5 +105,24 @@
       </a>
       <br /><br />
     </div>
+    <br />
+    <footer style="text-align: center">
+      <p>
+        This website uses content taken from
+        <a href="https://www.bbc.co.uk/bitesize/subjects/z4crr2p"
+          >BBC Bitesize</a
+        >. BBC is not affiliated with or endorsing this site.
+      </p>
+      <p class="quiz-attribution">
+        This quiz is adapted from BBC Bitesize. Original content © BBC.
+      </p>
+
+      <p>
+        Image source:
+        <a href="https://www.bbc.co.uk/bitesize/subjects/z4crr2p"
+          >BBC Bitesize</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

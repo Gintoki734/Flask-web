@@ -25,8 +25,6 @@ COURSES = {
     "Exploring the town": {"content": "data/Exploring the town.txt", "quiz": "data/Exploring the town.json"}
 }
 
-
-
 # https://stackoverflow.com/questions/47048906/convert-markdown-tables-to-html-tables-using-python
 # Function to read and convert markdown content
 def load_course_content(filename):
@@ -47,7 +45,7 @@ def load_quiz(filename):
 def home():
     return render_template("landingpage.html")
 
-# Dispalys the first page
+# Dispalys the home page
 @app.route("/index")
 def index():
     return render_template("index.html", courses=COURSES)
